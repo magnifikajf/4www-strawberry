@@ -50,7 +50,9 @@ header h1 {
      margin-bottom: 3%; 
     margin-right: 3%; 
     margin-left: 3%; 
-    line-height: 3em; 
+    line-height: 3em;
+    box-shadow: 0 0 15px rgba(000,000,000,0.2);
+   
 }
 #menu {
     color: #fff; 
@@ -106,6 +108,7 @@ nav a {
 
 #main-content figure {
     padding: 4%; 
+
 }
 
 #main-content section {
@@ -117,7 +120,7 @@ nav a {
     font-size: 27px;
     line-height: 30px;
     margin-bottom: 8px;
-    color: aliceblue; 
+    color: #fff; 
 }
 
 footer {
@@ -131,6 +134,61 @@ footer p {
     font-size: 0.9em; 
 }
 
-@media and (min-width:767px) {
+@media only screen and (min-width:768px) {
     
+    .main-header {
+        position: absolute; 
+        right: 0; 
+        top: 30px; 
+        width: 250px; 
+        margin: 0; 
+    }
+    #main-content {
+        max-width: 568px; 
+        margin: 0 auto; 
+        height: 700px; 
+    }
+    
+    nav ul {
+        height: auto; }
+    
+    nav {
+        position: absolute; 
+        right: 0; 
+        top: 137px; 
+        width: 254px; 
+        margin: 0; 
+    }
+    
+    .main-nav {
+        position: absolute; 
+        right: 0; 
+        top: 137px; 
+        width: 254px; 
+        margin: 0; 
+    }
+    
+    #menu {
+        display: none; 
+    }
+    
+    #main-content h2 {
+        font-size: 36px; 
+        line-height: 44px; 
+    }
+    
+    #main-content p {
+        font-size: 14px; 
+        line-height: 21px; 
+        font-family: Arial, Helvetica, sans-serif; 
+        
+    }
+    
+    footer {
+        width: 254px; 
+        position: absolute; 
+        right: 0; 
+        top: 750px
+        
+    }
 }
